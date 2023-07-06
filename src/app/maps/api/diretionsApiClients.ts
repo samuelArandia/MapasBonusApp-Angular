@@ -1,6 +1,6 @@
 import { HttpClient, HttpHandler } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environments';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +23,7 @@ export class DirectionsApiClient extends HttpClient {
           language: 'es',
           overview: 'full',
           steps: false,
-          access_token: environment.apikey,
+          access_token: environment.apiKey,
         }
       });
   }

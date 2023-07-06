@@ -1,6 +1,6 @@
 import { HttpClient, HttpHandler, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environments';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +25,7 @@ export class PlacesApiClient extends HttpClient {
         limit: '5',
         country: 'cl',
         language: 'es',
-        access_token: environment.apikey,
+        access_token: environment.apiKey,
         ...optiones.params
         }
       });
