@@ -1,0 +1,11 @@
+<div class="search-container">
+  <input
+    class="form-control"
+    placeholder="Search"
+    type="text"
+    #searchInputQuery
+    (keyup)="onQuerySearch(searchInputQuery.value)"
+    >
+
+    <app-search-results></app-search-results>
+</div>
